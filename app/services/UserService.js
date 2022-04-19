@@ -9,10 +9,14 @@ class UserService {
     static getInfo(obj){
         return Object.values(obj) //Este metodo devuelve un arreglo con los valores correspondites del objeto
     }
+
+    static updateUserUsername(obj, newData){
+        obj.username = newData
+    }
 }
 
 const user = UserService.create(2, "Xanul", "Rodrigo")
-const userInfoList = UserService.getInfo(user)
+// const userInfoList = UserService.getInfo(user)
 // console.log(userInfoList)
 
 module.exports = UserService
