@@ -1,0 +1,22 @@
+{
+  "name": "twitter_app",
+  "version": "1.0.0",
+  "description": "Twitter App Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xanul/twitter_app.git"
+  },
+  "author": "Rodrigo Rivas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xanul/twitter_app/issues"
+  },
+  "homepage": "https://github.com/Xanul/twitter_app#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
