@@ -9,8 +9,8 @@ class UserView {
         else if (payload.username === null || payload.name === null || payload.id === null) {
             return {error: "Se nececita un valor valido"}
         }
-        else {
-            return payload
+        else if (!payload.username || !payload.name || !payload.id){
+            return {error: "No ingresaste alguno de los valores, revisa nuevamente"}
         }
         
     }
@@ -18,8 +18,8 @@ class UserView {
 }
 
 const testPayloadObject = {
-    username: "Xanul",
-    name: null,
+   
+    name: "Rodrigo",
     id: "22"
 }
 console.log(UserView.createUser(testPayloadObject))
