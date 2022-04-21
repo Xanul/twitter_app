@@ -21,9 +21,9 @@ class UserService {
 }
 
 const user = UserService.create(2, "Xanul", "Rodrigo")
-const user2 = UserService.create(3, "Rodro", "Jorge")
+const user2 = UserService.create(3, "Jorg123", "Jorge")
 const userNames = UserService.getAllUsernames([user, user2])
-console.log(userNames)
+// console.log(userNames)
 // console.log(UserService.getAllUsernames(user))
 // const userInfoList = UserService.getInfo(user)
 // console.log(userInfoList)

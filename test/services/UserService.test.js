@@ -33,7 +33,6 @@ describe("Test for UserService", () =>{
         expect(usernames).toContain("carlogilmar1")
         expect(usernames).toContain("carlogilmar2")
         expect(usernames).toContain("carlogilmar3")
-     
     })
 })
 
