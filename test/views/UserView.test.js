@@ -18,4 +18,12 @@ describe("Test for UserView", () => {
         expect(result.error).toMatch(/No ingresaste/)
     })
     
+    test("Create a user with valid payload", () => {
+        const payload = {username: "Xanul", name: "Rodrigo", id: 1}
+        const result = UserView.createUser(payload)
+        expect(result.username).toBe("Xanul")
+        expect(result.name).toBe("Rodrigo")
+        expect(result.id).toBe(1)
+    })
+    
 })

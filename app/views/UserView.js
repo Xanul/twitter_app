@@ -12,15 +12,18 @@ class UserView {
         else if (!payload.username || !payload.name || !payload.id){
             return {error: "No ingresaste alguno de los valores, revisa nuevamente"}
         }
+        else {
+            return UserService.create(payload.id, payload.username, payload.name)
+        }
         
     }
 
 }
 
-const testPayloadObject = {
-   
+const testPayloadObject = { 
+    username: "Xanul",
     name: "Rodrigo",
-    id: "22"
+    id: "223"
 }
 console.log(UserView.createUser(testPayloadObject))
 
